@@ -1,0 +1,43 @@
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('Roboto-Regular.eot');
+    src: url('Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Roboto-Regular.woff') format('woff'),
+    url('Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('Roboto-Bold.eot');
+    src: url('Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+    url('Roboto-Bold.woff') format('woff'),
+    url('Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'Commissioner';
+    src: url('Commissioner-Bold.eot');
+    src: local('Commissioner Bold'), local('Commissioner-Bold'),
+        url('Commissioner-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Commissioner-Bold.woff2') format('woff2'),
+        url('Commissioner-Bold.woff') format('woff'),
+        url('Commissioner-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Commissioner';
+    src: url('Commissioner-ExtraLight.eot');
+    src: local('Commissioner ExtraLight'), local('Commissioner-ExtraLight'),
+        url('Commissioner-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('Commissioner-ExtraLight.woff2') format('woff2'),
+        url('Commissioner-ExtraLight.woff') format('woff'),
+        url('Commissioner-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
