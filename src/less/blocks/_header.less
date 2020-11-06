@@ -7,3 +7,27 @@
 .logo{
 	width: 204px;
 }
+.header-menu{
+	nav{
+		a{
+			font-size: 20px;
+			line-height: 1.4;
+			opacity: .4;
+			color: @pr;
+			cursor: default;
+			&+a{
+				margin-left: 50px;
+			}
+			&.link-button{
+				height: 54px;
+				line-height: 54px;
+				padding-left: 30px;
+				padding-right: 30px;
+				display: inline-block;
+				background-color:rgba(37, 42, 52, .1);
+				color: rgba(37, 42, 52, 1);
+				border-radius: 5px;
+			}
+		}
+	}
+}
