@@ -61,18 +61,25 @@ button{
 }
 .container{
 	width: 1290px;
+	max-width:1290px;
+	padding-left: 0;
+	padding-right: 0;
 	.ma;
 	@media(max-width:1364px){
 		width: 1140px;
+		max-width:1140px;
 	}
 	@media(max-width:1199px){
 		width: 930px;
+		max-width:930px;
 	}
 	@media(max-width:991px){
 		width: 708px;
+		max-width:708px;
 	}
 	@media(max-width:767px){
 		width: 540px;
+		max-width:540px;
 		padding-left: 0;
 		padding-right: 0;
 	}
@@ -138,7 +145,7 @@ button{
 	font-size: 60px;
 	line-height: 1.17;
 }
-.decor-text{
+.green-text{
 	color: @green;
 }
 .text-1{
@@ -163,6 +170,22 @@ button{
 	font-size: 16px;
 	line-height: 1.83;
 	font-family: @rr;
+}
+.text-bold{
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: bold;
+}
+.text-100{
+	font-size: 100px;
+	line-height: 0.83;
+	sup{
+		font-size: 60px;
+		font-weight: bold;
+	}
+}
+.text-green{
+	color: @green;
 }
 .badge{
 	background-color:@green;

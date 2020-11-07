@@ -55,12 +55,34 @@ a(href="#!").slim-button#floating-button Участвовать бесплатн
 						
 					.questions-block__row.top-0
 						.questions-block__column
-							+question('<span>Вот будешь взрослой — </span><span>все сама узнаешь')(class="question-item--right</span>")
-					.questions-block__row
+							+question('<span>Вот будешь взрослой — </span><span>все сама узнаешь')(class="question-item--right</span>")(class="question-item--right")
+					.questions-block__row.mt-0
 						.emoji-group
 							img(src="img/emoji/1.png", width="100" alt="emoji")
 							img(src="img/emoji/2.png", width="100" alt="emoji")
 							img(src="img/emoji/3.png", width="100" alt="emoji")
 
-
+			section.preview-info
+				.preview-info__head
+					p.decor-text #[span.green-text Вебинар подойдет вам,] если вы уже слышали такие вопросы<br class="visible-laptop"> от своего ребенка и не знали,<br class="visible-laptop"> как на них отвечать
+				.row
+					.col-md-4
+						.preview-info__column
+							.preview-info__icon
+								img(src="img/emoji/magic.png",width="88"  alt="emoji")
+							.preview-info__text
+								p.text-2 Если уходили от честного ответа, рассказывая про аиста,<br> капусту или доброго волшебника
+								p.text-2 Если переживаете, что в недалеком будущем услышите эти вопросы <br class="visible-laptop">снова или в первый раз
+					.col-md-4
+						.preview-info__column
+							.preview-info__icon
+								img(src="img/emoji/woman.png", width="77" alt="emoji")
+							.preview-info__text.pl-20
+								p.text-2 Если думаете, что разговоры «про это» начинают вести только в подростковом возрасте
+								p.text-2  Если испытывали дискомфорт: волновались и стеснялись, отвечая на вопросы «про это»
+							.preview-info__text
+					.col-md-4.preview-column__flex
+						.preview-info__column.pl-70
+							p.text-100 73 #[sup %]
+							p.text-bold женщин в России считают, что родителям сложно обсуждать половое созревание с детьми из-за стеснительности 
 							
