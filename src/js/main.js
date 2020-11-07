@@ -5,17 +5,18 @@ $(document).ready(function () {
   
 	// Определить праую координату плавающей кнопки
    if(previewBlock){
-	   let floatBtnRightPosition = +((bodyEl.offsetWidth - previewBlock.offsetWidth) / 2 -20);
+	   let floatBtnRightPosition = +((window.innerWidth - previewBlock.offsetWidth) / 2 -20);
 	   floatBtn.style.right = floatBtnRightPosition +'px';
 
    }
 
    window.addEventListener('scroll', function(){
-	   if(window.pageYOffset > 100){
+	   if(window.pageYOffset > 780){
 		 if(previewBlock){
 			floatBtn.classList.add('active'); 
-			let floatBtnRightPosition = +((bodyEl.offsetWidth - previewBlock.offsetWidth) / 2 -20);
+			let floatBtnRightPosition = +((window.innerWidth - previewBlock.offsetWidth) / 2 -20);
 			floatBtn.style.right = floatBtnRightPosition +'px';
+			
 		} 
 		
 	   }else{
