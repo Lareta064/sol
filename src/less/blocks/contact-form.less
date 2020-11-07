@@ -7,7 +7,7 @@
   padding-top: 40px;
   color: #fff;
 
-  @media (max-width: 767px) {
+  @media (max-width: 991px) {
     min-width: 375px;
     padding-top: 30px;
   }
@@ -17,7 +17,7 @@
     color: #ffffff;
     padding-bottom: 20px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       font-size: 36px;
     }
   }
@@ -29,6 +29,10 @@
     text-transform: uppercase;
     margin-bottom: 40px;
 
+    @media(max-width: 991px){
+      justify-content: space-between;
+    }
+
     .event-data {
       display: flex;
       padding-right: 40px;
@@ -38,14 +42,14 @@
       display: block;
       padding-left: 14px;
 
-      @media (max-width: 767px) {
+      @media (max-width: 991px) {
         display: none;
       }
     }
 
     p.d-none {
       display: none;
-      @media (max-width: 767px) {
+      @media (max-width: 991px) {
         display: block;
       }
     }
@@ -61,7 +65,7 @@
     border-radius: 5px;
     margin-bottom: 50px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       height: 260px;
       overflow: hidden;
     }
@@ -72,7 +76,7 @@
       padding-left: 30px;
       padding-bottom: 25px;
 
-      @media (max-width: 767px) {
+      @media (max-width: 991px) {
         width: 295px;
         font-size: 20px;
       }
@@ -83,7 +87,7 @@
       right: 20px;
       bottom: 0;
 
-      @media (max-width: 767px) {
+      @media (max-width: 991px) {
         left: 0;
         bottom: -57px;
       }
@@ -95,7 +99,7 @@
     padding-right: 110px;
     padding-left: 220px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -107,7 +111,7 @@
     left: -97px;
     margin-bottom: 60px;
 
-    @media (max-width: 767px) {
+    @media (max-width: 991px) {
       left: 0;
     }
 
@@ -117,7 +121,7 @@
         display: inline-block;
         width: 93px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 991px) {
           margin-bottom: 10px;
         }
       }
@@ -139,17 +143,17 @@
       border: 1px solid transparent;
       width: 747px;
 
-      @media (max-width: 767px) {
+      @media (max-width: 991px) {
         width: 335px;
       }
     }
 
 
     .info-text, .error-text {
-      padding-left: 94px;
+      padding-left: 95px;
       margin-top: 10px;
 
-      @media(max-width: 767px){
+      @media (max-width: 991px) {
         padding-left: 0;
       }
     }
@@ -168,18 +172,28 @@
     padding-bottom: 100px;
     border-bottom-right-radius: 15px;
     border-bottom-left-radius: 15px;
+
+    @media (max-width: 991px) {
+      display: block;
+      padding-left: 20px;
+    }
   }
 
   .form-footer {
     padding-left: 220px;
 
-    @media (max-width: 767px) {
-      padding-left: 20px;
+    @media (max-width: 991px) {
+      padding-left: 0px;
+      margin-bottom: 34px;
     }
   }
 
   .form-btn {
     margin-bottom: 30px;
+
+    .big-button {
+      width: 300px;
+    }
   }
 
   .disclaimer {
