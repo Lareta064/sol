@@ -1,8 +1,6 @@
 .preview
 	.container.container--dark
 		.preview-content
-			.preview-emoji
-				//- img(src="img/emoji/4.png",  width="300" alt="emoji")
 			.preview-content__top
 				+badge('Бесплатный вебинар')
 				.preview-content__data
@@ -15,6 +13,36 @@
 					h1 Как говорить с&nbsp;ребёнком на&nbsp;непростые темы полового созревания
 				.preview-subtitle.text-1 Онлайн-ликбез для родителей о&nbsp;том, как правильно,<br class='visible-laptop'> честно и&nbsp;не&nbsp;стесняясь отвечать на&nbsp;вопросы детей «про это»
 				.preview-content__btn
+					.preview-emoji
+						img(src="img/emoji/4.png",  width="300" alt="emoji")
 					a(href="#!").big-button Участвовать
-			.preview-content__question
-			.preview-content__question
+			//===== questions =====
+			section.questions-block
+				.questions-block__left
+					.questions-block__row
+						.questions-block__column
+							+question('<span>Мам, а как я появился</span><span> на свет?</span>')
+					.questions-block__row
+						.questions-block__column
+							+question('<span>Пап, а почему у мамы есть</span><span> грудь, а у тебя нет?</span>')
+					.questions-block__row
+						.questions-block__column
+							+question('<span>Почему девочки писают</span><span> сидя?</span>')
+					.questions-block__row
+						.questions-block__column
+							+question('<span>Как я смогла вылезти</span><span> из маминого живота?</span>')
+					.questions-block__row
+						.questions-block__column
+							+question('<span>Чем занимаются эти дядя</span><span> с тетей в телевизоре?</span>')
+						.questions-block__column-4
+							p.text-3 Если не отвечать на подобные вопросы, ребенок поймет, что вы не готовы обсуждать с ним все «это». И тогда получать информацию он будет от друзей, на улице или в интернете
+					.questions-block__row.top-0
+						.questions-block__column
+							+question('<span>Вы с папой тоже делаете</span><span> «это»?</span>')
+					.questions-block__row
+						.questions-block__column
+							+question('<span>Почему эта собака залезла</span><span> на другую собаку?</span>')
+				.questions-block__right
+					.questions-block__row
+						.questions-block__column
+							+question('<span>Мам, а как я появился</span><span> на свет?</span>')(class="question-item--right")
