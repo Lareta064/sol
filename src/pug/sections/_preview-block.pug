@@ -1,6 +1,7 @@
+a(href="#!").slim-button#floating-button Участвовать бесплатно
 .preview
 	.container.container--dark
-		.preview-content
+		.preview-content#preview-content
 			.preview-content__top
 				+badge('Бесплатный вебинар')
 				.preview-content__data
@@ -15,7 +16,7 @@
 				.preview-content__btn
 					.preview-emoji
 						img(src="img/emoji/4.png",  width="300" alt="emoji")
-					a(href="#!").big-button Участвовать
+					a(href="#!").big-button#participate Участвовать
 			//===== questions =====
 			section.questions-block
 				.questions-block__left
@@ -45,4 +46,43 @@
 				.questions-block__right
 					.questions-block__row
 						.questions-block__column
-							+question('<span>Мам, а как я появился</span><span> на свет?</span>')(class="question-item--right")
+							+question('Как-то раз к нам в гости пришел добрый волшебник<br> и принес очаровательного малыша. Это был ты')(class="question-item--right")
+					.questions-block__row.block-reverse
+						.questions-block__column-4
+							p.text-3 Можно придумывать сказки про&nbsp;аистов и&nbsp;капусту или избегать ответа. Но лучше подготовиться и&nbsp;объяснить все как есть — это&nbsp;поможет уберечь ребенка от&nbsp;проблем в&nbsp;будущем
+						.questions-block__column
+							+question('<span>Тебе еще рано об этом</span><span> думать</span>')(class="question-item--right")
+						
+					.questions-block__row.top-0
+						.questions-block__column
+							+question('<span>Вот будешь взрослой — </span><span>все сама узнаешь')(class="question-item--right</span>")(class="question-item--right")
+					.questions-block__row.mt-0
+						.emoji-group
+							img(src="img/emoji/1.png", width="100" alt="emoji")
+							img(src="img/emoji/2.png", width="100" alt="emoji")
+							img(src="img/emoji/3.png", width="100" alt="emoji")
+
+			section.preview-info
+				.preview-info__head
+					p.decor-text #[span.green-text Вебинар подойдет вам,] если вы уже слышали такие вопросы<br class="visible-laptop"> от своего ребенка и не знали,<br class="visible-laptop"> как на них отвечать
+				.row
+					.col-md-6.col-xl-4
+						.preview-info__column
+							.preview-info__icon
+								img(src="img/emoji/magic.png",width="88"  alt="emoji")
+							.preview-info__text
+								p.text-2 Если уходили от честного ответа, рассказывая про аиста,<br class="hide-tablet"> капусту или доброго волшебника
+								p.text-2 Если переживаете, что в недалеком будущем услышите эти вопросы <br class="visible-laptop">снова или в первый раз
+					.col-md-6.col-xl-4
+						.preview-info__column
+							.preview-info__icon
+								img(src="img/emoji/woman.png", width="77" alt="emoji")
+							.preview-info__text.pl-20
+								p.text-2 Если думаете, что разговоры «про это» начинают вести только в подростковом возрасте
+								p.text-2  Если испытывали дискомфорт: волновались и стеснялись, отвечая на вопросы «про это»
+							.preview-info__text
+					.col-md-6.col-xl-4.preview-column__flex
+						.preview-info__column.pl-70
+							p.text-100 73 #[sup %]
+							p.text-bold женщин в России считают, что родителям сложно обсуждать половое созревание с детьми из-за стеснительности 
+							
