@@ -56,3 +56,21 @@
 		padding-left: 70px;
 	}
 }
+@media(max-width:1199px){
+	.preview-info__column.pl-70{
+		position: relative;
+		padding-top: 70px;
+		padding-left: 25px;
+		&:after{
+			content: '';
+			
+			width: 1px;
+			background-color: @green;
+			position: absolute;
+			bottom: 0px;
+			top: 20px;
+			left: 0;
+		}
+
+	}
+}
