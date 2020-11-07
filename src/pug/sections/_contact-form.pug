@@ -7,6 +7,7 @@
                 .event-data
                     +calendar
                     p 10 ноября 2020
+                    p.d-none 10.11.2020
                 .event-time
                     p 19:30 &mdash; 21:00 мск
             .contact-subtitle
@@ -14,7 +15,6 @@
                     p И получите в подарок два полезных чек-листа,<br> специально разработанных сексологом и психологом
                 .contact-subtitle--img
                     img(src="img/checklists/3.png" width='260')
-                    //img(src="img/checklists/2.png" width='163')
         .contact-form-item
             .form-item
                 label Ваше имя
@@ -28,8 +28,16 @@
                     p Пожалуйста, перепроверьте введенный адрес эл. почты
             .form-item
                 label Телефон
-                textarea(type="text" name="message")
+                input(type="text" class="phone" name="userPhone" )
                 .info-text
                     p За час до начала вебинара предупредим вас по СМС
         .contact-form-footer
-
+            .form-footer
+                .form-btn
+                    button.big-button(type="submit" ) Отправить
+                .agree-text
+                    p Нажимая на кнопку вы принимаете #[a(href="#!") пользовательское соглашение]
+            .disclaimer
+                +lock
+                .disclaimer-text
+                    p Не шлем спам по СМС или почтой. Надежно храним персональные данные пользователей<br> и не передаем их третьим лицам
