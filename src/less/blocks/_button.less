@@ -22,5 +22,35 @@
   }
   &:hover{
     background: @orange;
+    color: #FFF;
+  }
+}
+.slim-button{
+  height: 54px;
+  line-height: 54px;
+  background: @red;
+  border-radius: 5px;
+  display: inline-block;
+  cursor: pointer;
+  .tr;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #FFF;
+  font-size: 20px;
+  font-family: @rr;
+  &:hover{
+    background: @orange;
+    color: #FFF;
+  }
+
+}
+#floating-button{
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  z-index: 10;
+  display: none;
+  &.active{
+    display: block;
   }
 }
