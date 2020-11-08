@@ -1,120 +1,142 @@
-.preview{
-	margin-top: 64px;
-	@media(max-width:1199px){margin-top: 34px;}
-	@media(max-width:767px){margin-top: 14px;}
+.preview {
+  margin-top: 64px;
+  @media (max-width: 1199px) {
+    margin-top: 34px;
+  }
+  @media (max-width: 767px) {
+    margin-top: 14px;
+  }
+
+
+  @media (max-width: 767px) {
+    .preview-content__data {
+      margin-top: 24px;
+    }
+  }
 }
 
-.preview .container--dark{
-	border-radius: 5px 5px 5px 100px;
-	@media(max-width:767px){
-		overflow: hidden;
-		border-radius: 5px;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-}
-.preview-content{
-	background: @pr;
-	border-radius: 5px 5px 5px 100px;
-	padding: 50px;
-	padding-top: 40px;
-	position: relative;
-	
-	@media(max-width:767px){
-		border-radius:0;
-		padding-left: 0;
-		padding-right: 0;
-		padding-top: 30px;
-		padding-bottom: 100px;
-		border-radius: 5px;
-		
-	}
+.preview .container--dark {
+  border-radius: 5px 5px 5px 100px;
+  @media (max-width: 767px) {
+    overflow: hidden;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
-.preview-content__top{
-	.flex-block;
-	margin-bottom: 70px;
-	@media(max-width:767px){
-		flex-direction: column;
-		align-items: flex-start;
-		margin-bottom: 50px;
-	}
-}
-.preview-content__data{
-	display: flex;
-	p{
-		text-transform: uppercase;
-		color: #fff;
-		letter-spacing: 0.05em;
-		font-weight: 700;
-		white-space: nowrap;
-		span{white-space: nowrap;}
-	}
-	p+p{
-		margin-left: 40px;
-	}
-	p:first-child{
-		position: relative;
-		padding-left: 34px;
-	}
-	p:first-child:before{
-		content: '';
-		width: 20px;
-		height: 21px;
-		background-image: url(../img/icons/calendar.png);
-		background-size: contain;
-		background-position: 0 0;
-		background-repeat: no-repeat;
-		position: absolute;
-		left: -7px;
-		top: -2px;
-		@media(max-width:1364px){
-			left: 0px;
-		top: 0px;
-		}
+.preview-content {
+  background: @pr;
+  border-radius: 5px 5px 5px 100px;
+  padding: 50px;
+  padding-top: 40px;
+  position: relative;
 
-	}
-	@media(max-width:767px){
-		margin-top: 24px;
-		
-	}
-}
-.preview-content__title{
-	h1, .text-1{
-		color: #fff;
+  @media (max-width: 767px) {
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    border-radius: 5px;
 
-	}
-	.title-1{
-		margin-bottom: 50px;
-		@media(max-width:767px){
-			margin-bottom: 33px;
-		}
-	}
-	.preview-subtitle{
-		@media(max-width:1199px){
-			max-width:  535px;
-		}
-		@media(max-width:767px){
-			max-width:  320px;
-		}
-	}
+  }
 }
-.preview-content__btn{
-	margin-top: 60px;
-	position: relative;
-	@media(max-width:1199px){
-		margin-top: 50px;
-	}
+
+.preview-content__top {
+  .flex-block;
+  margin-bottom: 70px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 50px;
+  }
 }
-.preview-emoji{
-	position: absolute;
-	width: 300px;
-	right: -90px;
-	bottom: 0;
-	z-index: 2;
-	@media(max-width: 1364px){
-		width: 140px;
-		right: -60px;
-		bottom: -22px;
-	}
+
+.preview-content__data {
+  display: flex;
+
+  p {
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    white-space: nowrap;
+
+    span {
+      white-space: nowrap;
+    }
+  }
+
+  p + p {
+    margin-left: 40px;
+  }
+
+  p:first-child {
+    position: relative;
+    padding-left: 34px;
+  }
+
+  p:first-child:before {
+    content: '';
+    width: 20px;
+    height: 21px;
+    background-image: url(../img/icons/calendar.png);
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -7px;
+    top: -2px;
+    @media (max-width: 1364px) {
+      left: 0px;
+      top: 0px;
+    }
+
+  }
+
+}
+
+.preview-content__title {
+  h1, .text-1 {
+    color: #fff;
+
+  }
+
+  .title-1 {
+    margin-bottom: 50px;
+    @media (max-width: 767px) {
+      margin-bottom: 33px;
+    }
+  }
+
+  .preview-subtitle {
+    @media (max-width: 1199px) {
+      max-width: 535px;
+    }
+    @media (max-width: 767px) {
+      max-width: 320px;
+    }
+  }
+}
+
+.preview-content__btn {
+  margin-top: 60px;
+  position: relative;
+  @media (max-width: 1199px) {
+    margin-top: 50px;
+  }
+}
+
+.preview-emoji {
+  position: absolute;
+  width: 300px;
+  right: -90px;
+  bottom: 0;
+  z-index: 2;
+  @media (max-width: 1364px) {
+    width: 140px;
+    right: -60px;
+    bottom: -22px;
+  }
 }
