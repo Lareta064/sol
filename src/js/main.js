@@ -30,7 +30,7 @@ $(document).ready(function () {
 	const btnShowReviewContent = document.getElementById('showReview'); 
 	if(reviewContent){
 		btnShowReviewContent.addEventListener('click', function(){
-			// reviewContent.classList.add('full');
+			
 			this.classList.add('hide');
 		let fullReviewHeight = document.querySelector('.review-wrapper').clientHeight;
 		let heightValue = +fullReviewHeight+'px';
@@ -50,18 +50,17 @@ $(document).ready(function () {
 				if (videoClip.paused) {
 					videoClip.play();
 					videoBtn.style.opacity = "0";
-					
+					this.classList.add("active");
 				} else {
 					videoClip.pause();
 					videoBtn.style.opacity = "1";
 					
 				}
-				//videoClip.play();
-			
+				
+			// видео проигралось до конца
 			videoClip.addEventListener("ended", function () {
 				videoClip.pause();
 				videoBtn.style.opacity = "1";
-				this.classList.remove("active");
 			});	
 		});
 		}
