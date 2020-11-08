@@ -1,36 +1,38 @@
 .contact-form
-    .form-body
-        .contact-form-title
-            .title-2
-                h2 Зарегистрируйтесь<br> на бесплатный вебинар
-            .event
-                .event-data
-                    +calendar
-                    p 10 ноября 2020
-                    p.d-none 10.11.2020
-                .event-time
-                    p 19:30 &mdash; 21:00 мск
-            .contact-subtitle
-                .contact-subtitle--text
-                    p И получите в подарок два полезных чек-листа,<br> специально разработанных сексологом и психологом
-                .contact-subtitle--img
-                    img(src="img/checklists/3.png" width='260')
-        .contact-form-item
-            .form-item
-                label Ваше имя
+    .contact-form-title
+        .title-2
+            h2 Регистрация<br> на бесплатный вебинар
+        .event
+            .event-data
+                +calendar
+                p
+                    .visible-laptop 10 ноября 2020
+                    .hide-laptop 10.11.2020
+            .event-time
+                p 19:30 &mdash; 21:00 мск
+        .contact-subtitle
+            .contact-subtitle--text
+                p И получите в подарок два полезных чек-листа,<br> специально разработанных сексологом и психологом
+            .contact-subtitle--img
+                img(src="img/checklists/3.png" width='260')
+
+    form.feedback-form
+        .form-item
+            label Ваше имя
+            .form-input
                 input(type="text" name="")
-            .form-item
-                label Эл.почта
+        .form-item
+            label Эл.почта
+            .form-input
                 input.error(type="email" name="")
-                .info-text
-                    p Отправим подтверждение о регистрации на эту почту
-                .error-text
-                    p Пожалуйста, перепроверьте введенный адрес эл. почты
-            .form-item
-                label Телефон
+                p Отправим подтверждение о регистрации на эту почту
+                p.error Пожалуйста, перепроверьте введенный адрес эл. почты
+        .form-item
+            label Телефон
+            .form-input.form-input--short
                 input(type="text" class="phone" name="userPhone" )
-                .info-text
-                    p За час до начала вебинара предупредим вас по СМС
+                p За час до начала вебинара предупредим вас по СМС
+
         .contact-form-footer
             .form-footer
                 .form-btn
