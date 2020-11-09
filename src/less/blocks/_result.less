@@ -1,6 +1,10 @@
 .result{
 	margin-top: 200px;
 	position: relative;
+	overflow: hidden;
+	@media(max-width:767px){
+		padding-bottom: 60px;
+	}
 	.title-2{
 		margin-bottom: 40px;
 	}
@@ -8,9 +12,14 @@
 		position: absolute;
 		width: 38.8%;
 		max-width: 520px;
+		min-width: 312px;
 		bottom: -6%;
 		right: 3%;
 		z-index: -1;
+		@media(max-width:767px){
+			right: -9%;
+			bottom: -6%;
+		}
 		
 
 	}
@@ -20,12 +29,25 @@
 	z-index: 1;
 	ul,.text-2{
 		padding-left: 99px;
+		@media(max-width:1364px){
+			padding-left: 30px;
+		}
+		@media(max-width:1199px){
+			padding-left: 0;
+		}
 	}
 	li +li {
 		margin-top: 60px;
+		@media(max-width:767px){
+			margin-top: 70px;
+		}
 	}
 	.text-2{
 		margin-top: 30px;
+		@media(max-width:767px){
+			margin-top: 40px;
+			
+		}
 	}
 }
 ul li.decor-label{
@@ -34,5 +56,8 @@ margin-top: 30px!important;
 .decor-label .badge{
 	margin-bottom: 10px;
 	background-color: @blue;
+	@media(max-width:767px){
+		margin-top: 14px;
+	}
 
 }

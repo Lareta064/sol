@@ -150,18 +150,24 @@ button{
 	}
 	
 }
-
+.decor-text,
 .title-2 h2{
 	font-size: 60px;
 	line-height: 1.17;
-}
-.decor-text{
-	font-size: 60px;
-	line-height: 1.17;
+	@media(max-width:1364px){
+		font-size: 50px;
+		
+	}
 	@media(max-width:991px){
+		font-size: 40px;
+		
+	}
+	@media(max-width:767px){
 		font-size: 36px;
+		line-height: 44px;
 	}
 }
+
 .green-text{
 	color: @green;
 }
