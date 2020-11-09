@@ -58,17 +58,26 @@ $(document).ready(function () {
 	}
 	// video review
 	const videoContents = document.querySelectorAll('.video-wrapper');
+
+	function stopAllVideos(){
+		for(let vid of videoContents){
+			vid.querySelector('video').pause();
+			vid.querySelector('.btn-play').style.opacity = "1";
+		}
+	}
+
 	if (videoContents) {
 		for(let item of videoContents){
 			item.addEventListener('click', function () {
-
+				
 			const videoBtn = item.querySelector('.btn-play');
-			const videoClip = item.querySelector('video');
+			const videoClip = item.querySelector('video');			
 			
 				if (videoClip.paused) {
+					stopAllVideos();
 					videoClip.play();
 					videoBtn.style.opacity = "0";
-					this.classList.add("active");
+					
 				} else {
 					videoClip.pause();
 					videoBtn.style.opacity = "1";
