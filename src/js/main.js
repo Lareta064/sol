@@ -10,20 +10,38 @@ $(document).ready(function () {
 
    }
 
-   window.addEventListener('scroll', function(){
-	   if(window.pageYOffset > 780){
-		 if(previewBlock){
+   var sbTopPos = $("#participate").offset().top;
+   var sbHeight = $("#participate").outerHeight();
+   var ffTopPos = $("#contact-form").offset().top;
+	$(window).scroll(function(){		
+		if(
+			($(window).scrollTop() >= sbTopPos+sbHeight)&&
+			($(window).scrollTop()+$(window).height() <= ffTopPos)
+			){
+			if(floatBtn.classList.contains("active"))
+				return;
 			floatBtn.classList.add('active'); 
 			let floatBtnRightPosition = +((window.innerWidth - previewBlock.offsetWidth) / 2 -20);
 			floatBtn.style.right = floatBtnRightPosition +'px';
-			
-		} 
-		
-	   }else{
+		}else{
+			//hide button
 			floatBtn.classList.remove('active'); 
-		} 
-   });
+		}
+	});
 
+//    window.addEventListener('scroll', function(){
+// 	   if(window.pageYOffset > 780){
+// 		 if(previewBlock){
+// 			floatBtn.classList.add('active'); 
+// 			let floatBtnRightPosition = +((window.innerWidth - previewBlock.offsetWidth) / 2 -20);
+// 			floatBtn.style.right = floatBtnRightPosition +'px';
+			
+// 		} 
+		
+// 	   }else{
+// 			floatBtn.classList.remove('active'); 
+// 		} 
+//    });
 
 	//  show Reviews
 	const reviewContent = document.getElementById('review-content');  
