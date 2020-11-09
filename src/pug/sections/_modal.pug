@@ -1,0 +1,51 @@
+#modalForm.modal-form.modal.show.fade(tabindex="-1" role="dialog"  aria-hidden="true")
+    .modal-dialog.modal-dialog-centered(role="document")
+        .modal-content.contact-form
+            button.close(type="button" data-dismiss="modal" aria-label="Close")
+                span(aria-hidden="true")
+                    +close
+            .modal-body
+                .form-body
+                    .modal-form-title
+                        .title-4
+                            h2#modal-title Регистрация<br> на бесплатный вебинар
+                        .event
+                            .preview-content__data
+                                +calendar
+                                p
+                                    span.visible-laptop 10 ноября 2020
+                                    span.hide-laptop 10.11.2020
+                                p 19:30 &mdash; 21:00 мск
+                        .contact-subtitle
+                            .contact-subtitle--text
+                                p И получите в подарок два полезных чек-листа,<br> специально разработанных сексологом и психологом
+                            .contact-subtitle--img
+                                img(src="img/checklists/3.png" width='260')
+
+                    form.feedback-form
+                        .form-item
+                            label Ваше имя
+                            .form-input
+                                input(type="text" name="")
+                        .form-item
+                            label Эл.почта
+                            .form-input
+                                input.error(type="email" name="")
+                                p Отправим подтверждение о регистрации на эту почту
+                                p.error Пожалуйста, перепроверьте введенный адрес эл. почты
+                        .form-item
+                            label Телефон
+                            .form-input.form-input--short
+                                input(type="text" class="phone" name="userPhone" )
+                                p За час до начала вебинара предупредим вас по СМС
+
+                        .contact-form-footer
+                            .form-footer
+                                .form-btn
+                                    button.big-button(type="submit" ) Отправить
+                                .agree-text
+                                    p Нажимая на кнопку вы принимаете #[a(href="#!") пользовательское соглашение]
+                            .disclaimer
+                                +lock
+                                .disclaimer-text
+                                    p Не шлем спам по СМС или почтой. Надежно храним персональные данные пользователей<br> и не передаем их третьим лицам
