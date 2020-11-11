@@ -6,7 +6,7 @@
                     +close
             .modal-body
                 .special-wrapper
-                    .social-icon
+                    .social-icon#social-icon--modal
                         img(src="img/emoji/star.png",  width="323" alt="emoji")
                     section.contact-form.contact-form-success
                         .success-icon
@@ -25,54 +25,54 @@
                                     p 19:30 &mdash; 21:00 мск
                             .contact-subtitle
                                 .subtitle-text
-                                    p И получите в подарок два полезных чек-листа,<br> специально разработанных сексологом и психологом
+                                    p.text-2 И получите в подарок два полезных чек-листа,<br> специально разработанных сексологом и психологом
                                 .subtitle-text.subtitle-text__success
-                                    p Через пару минут на ваш email придет подтверждение о регистрации и ссылки на два полезных чек-листа
-                                    p Если письма нет, проверьте папку «Спам»
+                                    p.text-2 Через пару минут на ваш email придет подтверждение о регистрации и ссылки на два полезных чек-листа
+                                    p.text-2 Если письма нет, проверьте папку «Спам»
                                 .subtitle-img
-                                    img(src="img/checklists/3.png" width='260').img-mob
+                                    img(src="img/checklists/mob.png" width='260').img-mob
                                     img(src="img/checklists/4.png" width='260').img-desk
                         .contact-form-inner
                             .success-message
                                 .info-text--success
-                                    p Чтобы не пропустить вебинар,<br class='.visible-mobile'> подключите мессенджер<br class='.visible-mobile'> куда мы скинем ссылку<br class='.visible-mobile'> на трансляцию
+                                    p.text-2 Чтобы не пропустить вебинар,<br class='.visible-mobile'> подключите мессенджер<br class='.visible-mobile'> куда мы скинем ссылку<br class='.visible-mobile'> на трансляцию
                                 .social-button--block
                                     a(href="tg://resolve?domain=sexprosvetschoolBot&start=ml3" target="blank").social-button
                                         span
                                             i.fab.fa-telegram-plane
-                                        span Telegram
+                                        span.text-2 Telegram
                                     a(href="https://vk.com/app6379730_-194449090#l=3&ml=3&auto=1" target="blank").social-button.social-button--vk
                                         span
                                             i.fab.fa-vk
-                                        span ВКонтакте
+                                        span.text-2 ВКонтакте
 
-                            form.feedback-form
-                                .form-item
-                                    label Ваше имя
-                                    .form-input
-                                        input(type="text" name="name")
-                                .form-item
-                                    label Эл.почта
-                                    .form-input
-                                        input.error(type="email" name="email" class='required-email')
-                                        p Отправим подтверждение о регистрации на эту почту
-                                        p.error Пожалуйста, перепроверьте введенный адрес эл. почты
-                                .form-item
-                                    label Телефон
-                                    .form-input.form-input--short
-                                        input(type="text" class="phone" name="phone" class='required-phone')
-                                        p За час до начала вебинара предупредим вас по СМС
-
-                                .contact-form-footer
-                                    .form-footer
-                                        .form-btn
-                                            button.big-button(type="submit" ) Отправить
-                                        .agree-text
-                                            p Нажимая на кнопку вы принимаете #[a(href="#!") пользовательское соглашение]
-                                    .disclaimer
-                                        +lock
-                                        .disclaimer-text
-                                            p Не шлем спам по СМС или почтой. Надежно храним персональные данные пользователей<br> и не передаем их третьим лицам
+                            //form.feedback-form#feedback-form--modal
+                            //    .form-item
+                            //        label.text-2 Ваше имя
+                            //        .form-input
+                            //            input(type="text" name="name")
+                            //    .form-item
+                            //        label.text-2 Эл.почта
+                            //        .form-input
+                            //            input.error(type="email" name="email" id='modal-email')
+                            //            p.text-2.ps-text Отправим подтверждение о регистрации на эту почту
+                            //            p.error.text-2 Пожалуйста, перепроверьте введенный адрес эл. почты
+                            //    .form-item
+                            //        label.text-2 Телефон
+                            //        .form-input.form-input--short
+                            //            input(type="text" class="phone" name="phone" id='modal-phone')
+                            //            p.text-2 За час до начала вебинара предупредим вас по СМС
+                            //
+                            //    .contact-form-footer
+                            //        .form-footer
+                            //            .form-btn
+                            //                button.big-button(type="submit" ) Отправить
+                            //            .agree-text
+                            //                p Нажимая на кнопку вы принимаете<br class='visible-mobile'> #[a.text-link(href="#!") пользовательское соглашение]
+                            //        .disclaimer
+                            //            +lock
+                            //            .disclaimer-text
+                            //                p Не шлем спам по СМС или почтой. Надежно храним персональные данные пользователей<br> и не передаем их третьим лицам
 
 
 
