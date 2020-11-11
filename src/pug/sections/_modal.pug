@@ -50,17 +50,17 @@
                                 .form-item
                                     label Ваше имя
                                     .form-input
-                                        input(type="text" name="")
+                                        input(type="text" name="name")
                                 .form-item
                                     label Эл.почта
                                     .form-input
-                                        input.error(type="email" name="")
+                                        input.error(type="email" name="email" class='required-email')
                                         p Отправим подтверждение о регистрации на эту почту
                                         p.error Пожалуйста, перепроверьте введенный адрес эл. почты
                                 .form-item
                                     label Телефон
                                     .form-input.form-input--short
-                                        input(type="text" class="phone" name="userPhone" )
+                                        input(type="text" class="phone" name="phone" class='required-phone')
                                         p За час до начала вебинара предупредим вас по СМС
 
                                 .contact-form-footer
