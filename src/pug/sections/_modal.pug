@@ -5,7 +5,7 @@
                 span(aria-hidden="true")
                     +close
             .modal-body
-                .special-wrapper#contact-form
+                .special-wrapper
                     .social-icon
                         img(src="img/emoji/star.png",  width="323" alt="emoji")
                     section.contact-form.contact-form-success
@@ -46,33 +46,33 @@
                                             i.fab.fa-vk
                                         span ВКонтакте
 
-                            //form.feedback-form
-                            //    .form-item
-                            //        label Ваше имя
-                            //        .form-input
-                            //            input(type="text" name="")
-                            //    .form-item
-                            //        label Эл.почта
-                            //        .form-input
-                            //            input.error(type="email" name="")
-                            //            p Отправим подтверждение о регистрации на эту почту
-                            //            p.error Пожалуйста, перепроверьте введенный адрес эл. почты
-                            //    .form-item
-                            //        label Телефон
-                            //        .form-input.form-input--short
-                            //            input(type="text" class="phone" name="userPhone" )
-                            //            p За час до начала вебинара предупредим вас по СМС
-                            //
-                            //    .contact-form-footer
-                            //        .form-footer
-                            //            .form-btn
-                            //                button.big-button(type="submit" ) Отправить
-                            //            .agree-text
-                            //                p Нажимая на кнопку вы принимаете #[a(href="#!") пользовательское соглашение]
-                            //        .disclaimer
-                            //            +lock
-                            //            .disclaimer-text
-                            //                p Не шлем спам по СМС или почтой. Надежно храним персональные данные пользователей<br> и не передаем их третьим лицам
+                            form.feedback-form
+                                .form-item
+                                    label Ваше имя
+                                    .form-input
+                                        input(type="text" name="name")
+                                .form-item
+                                    label Эл.почта
+                                    .form-input
+                                        input.error(type="email" name="email" class='required-email')
+                                        p Отправим подтверждение о регистрации на эту почту
+                                        p.error Пожалуйста, перепроверьте введенный адрес эл. почты
+                                .form-item
+                                    label Телефон
+                                    .form-input.form-input--short
+                                        input(type="text" class="phone" name="phone" class='required-phone')
+                                        p За час до начала вебинара предупредим вас по СМС
+
+                                .contact-form-footer
+                                    .form-footer
+                                        .form-btn
+                                            button.big-button(type="submit" ) Отправить
+                                        .agree-text
+                                            p Нажимая на кнопку вы принимаете #[a(href="#!") пользовательское соглашение]
+                                    .disclaimer
+                                        +lock
+                                        .disclaimer-text
+                                            p Не шлем спам по СМС или почтой. Надежно храним персональные данные пользователей<br> и не передаем их третьим лицам
 
 
 
