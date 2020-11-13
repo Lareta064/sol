@@ -1,13 +1,27 @@
 #modalForm {
   .modal-dialog {
     max-width: 100%;
+
+  }
+
+  .feedback-form:last-child {
+    margin-bottom: 0;
   }
 
   .contact-form {
     margin-bottom: 0;
     margin-top: 0;
+
     padding: 0;
     //background-color: transparent;
+  }
+
+  .contact-form-title {
+    padding-top: 40px;
+
+    @media(max-width: 767px){
+      padding-top: 80px;
+    }
   }
 
   .modal-body {
@@ -26,7 +40,6 @@
 
     svg {
       .tr;
-
     }
 
     &:hover svg {
@@ -35,6 +48,68 @@
 
     path {
       fill: #FFFFFF;
+    }
+  }
+
+  .form-input {
+    @media (max-width: 767px) {
+      width: 318px;
+
+    }
+  }
+
+
+  .preview-content__data p + p{
+    @media(max-width: 767px){
+      margin-left: 39px;
+    }
+  }
+
+
+  .success-icon{
+    top: -27px;
+    left: 103px;
+
+    @media(max-width: 991px){
+      top: -40px;
+      left: -12px;
+    }
+
+    @media(max-width: 767px){
+      top: -26px;
+      left: -30px;
+    }
+  }
+
+  .social-icon{
+      bottom: -160px;
+      right: 90px;
+
+    @media(max-width: 1199px){
+      bottom: -75px;
+      right: 50px;
+    }
+
+    @media(max-width: 991px){
+      bottom: 0;
+      right: 90px;
+    }
+
+    @media(max-width: 767px){
+      bottom: -60px;
+      right: -34px;
+    }
+
+    img{
+      width: 300px;
+
+      @media(max-width: 1200px){
+        width: 240px;
+      }
+
+      @media(max-width: 767px){
+        width: 183px;
+      }
     }
   }
 }

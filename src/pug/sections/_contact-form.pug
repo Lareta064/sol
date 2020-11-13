@@ -1,7 +1,7 @@
 .special-wrapper.contact-form__wrapper#contact-form
     .social-icon#social-icon
         img(src="img/emoji/star.png",  width="323" alt="emoji")
-    section.contact-form
+    section.contact-form.contact-form-success
         .success-icon
             +thanks
         .contact-form-title
@@ -55,14 +55,13 @@
                     .form-input.form-input--short
                         input(type="text" class="phone" name="phone" class='required-phone')
                         p.text-2 За час до начала вебинара предупредим вас по СМС
-                        p.text-2.error С этим номером телефона что-то не так. Перепроверьте, пожалуйста.
-
+                        p.text-2.error С этим номером телефона что-то не так. Перепроверьте, пожалуйста
                 .contact-form-footer
                     .form-footer
                         .form-btn
                             button.big-button(type="submit" ) Отправить
                         .agree-text
-                            p Нажимая на кнопку вы принимаете #[a.text-link(href="#!") пользовательское соглашение]
+                            p Нажимая на кнопку вы принимаете<br class='visible-mobile'> #[a.text-link(href="#!") пользовательское соглашение]
                     .disclaimer
                         +lock
                         .disclaimer-text
