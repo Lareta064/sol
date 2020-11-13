@@ -1,5 +1,5 @@
 .special-wrapper.contact-form__wrapper
-    .social-icon
+    .social-icon#social-icon
         img(src="img/emoji/star.png",  width="323" alt="emoji")
     section.contact-form.contact-form-success
         .success-icon
@@ -39,33 +39,33 @@
                             i.fab.fa-vk
                         span.text-2 ВКонтакте
 
-            //form.feedback-form#feedback-form--main
-            //    .form-item
-            //        label.text-2 Ваше имя
-            //        .form-input
-            //            input(type="text" name="name")
-            //    .form-item
-            //        label.text-2 Эл.почта
-            //        .form-input
-            //            input.error(type="email" name="email" class='required-email')
-            //            p.text-2.ps-text Отправим подтверждение о регистрации на эту почту
-            //            p.text-2.error Пожалуйста, перепроверьте введенный адрес эл. почты
-            //    .form-item
-            //        label.text-2 Телефон
-            //        .form-input.form-input--short
-            //            input(type="text" class="phone" name="phone" class='required-phone')
-            //            p.text-2 За час до начала вебинара предупредим вас по СМС
-            //            p.text-2.error С этим номером телефона что-то не так. Перепроверьте, пожалуйста
-            //    .contact-form-footer
-            //        .form-footer
-            //            .form-btn
-            //                button.big-button(type="submit" ) Отправить
-            //            .agree-text
-            //                p Нажимая на кнопку вы принимаете<br class='visible-mobile'> #[a.text-link(href="#!") пользовательское соглашение]
-            //        .disclaimer
-            //            +lock
-            //            .disclaimer-text
-            //                p Не шлем спам по СМС или почтой. Надежно храним персональные данные пользователей<br> и не передаем их третьим лицам
+            form.feedback-form#feedback-form--main
+                .form-item
+                    label.text-2 Ваше имя
+                    .form-input
+                        input(type="text" name="name")
+                .form-item
+                    label.text-2 Эл.почта
+                    .form-input
+                        input.error(type="email" name="email" class='required-email')
+                        p.text-2.ps-text Отправим подтверждение о регистрации на эту почту
+                        p.text-2.error Пожалуйста, перепроверьте введенный адрес эл. почты
+                .form-item
+                    label.text-2 Телефон
+                    .form-input.form-input--short
+                        input(type="text" class="phone" name="phone" class='required-phone')
+                        p.text-2 За час до начала вебинара предупредим вас по СМС
+                        p.text-2.error С этим номером телефона что-то не так. Перепроверьте, пожалуйста
+                .contact-form-footer
+                    .form-footer
+                        .form-btn
+                            button.big-button(type="submit" ) Отправить
+                        .agree-text
+                            p Нажимая на кнопку вы принимаете<br class='visible-mobile'> #[a.text-link(href="#!") пользовательское соглашение]
+                    .disclaimer
+                        +lock
+                        .disclaimer-text
+                            p Не шлем спам по СМС или почтой. Надежно храним персональные данные пользователей<br> и не передаем их третьим лицам
 
 
 
