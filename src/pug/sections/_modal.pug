@@ -46,7 +46,7 @@
                                             i.fab.fa-vk
                                         span ВКонтакте
 
-                            form.feedback-form
+                            form.feedback-form#feedback-form--modal
                                 .form-item
                                     label Ваше имя
                                     .form-input
@@ -54,14 +54,15 @@
                                 .form-item
                                     label Эл.почта
                                     .form-input
-                                        input.error(type="email" name="email" class='required-email')
-                                        p Отправим подтверждение о регистрации на эту почту
-                                        p.error Пожалуйста, перепроверьте введенный адрес эл. почты
+                                        input.error(type="email" name="email" id="modal-email")
+                                        p.text-2.ps-text Отправим подтверждение о регистрации на эту почту
+                                        p.text-2.error Пожалуйста, перепроверьте введенный адрес эл. почты
                                 .form-item
                                     label Телефон
                                     .form-input.form-input--short
-                                        input(type="text" class="phone" name="phone" class='required-phone')
-                                        p За час до начала вебинара предупредим вас по СМС
+                                        input(type="text" class="phone" name="phone" id="modal-phone")
+                                        p.text-2 За час до начала вебинара предупредим вас по СМС
+                                        p.text-2.error С этим номером телефона что-то не так. Перепроверьте, пожалуйста.
 
                                 .contact-form-footer
                                     .form-footer

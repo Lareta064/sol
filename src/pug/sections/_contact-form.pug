@@ -1,4 +1,4 @@
-.special-wrapper.contact-form__wrapper
+.special-wrapper.contact-form__wrapper#contact-form
     .social-icon#social-icon
         img(src="img/emoji/star.png",  width="323" alt="emoji")
     section.contact-form
@@ -30,16 +30,16 @@
                 .info-text--success
                     p.text-2 Чтобы не пропустить вебинар,<br class='visible-mobile'> подключите мессенджер<br class='.visible-mobile'> куда мы скинем ссылку<br class='visible-mobile'> на трансляцию
                 .social-button--block
-                    a(href="tg://resolve?domain=sexprosvetschoolBot&start=ml3" target="blank").social-button
+                    a(href="tg://resolve?domain=sexprosvetschoolBot&start=ml3" target="_blank").social-button
                         span
                             i.fab.fa-telegram-plane
                         span.text-2 Telegram
-                    a(href="https://vk.com/app6379730_-194449090#l=3&ml=3&auto=1" target="blank").social-button.social-button--vk
+                    a(href="https://vk.com/app6379730_-194449090#l=3&ml=3&auto=1" target="_blank").social-button.social-button--vk
                         span
                             i.fab.fa-vk
                         span.text-2 ВКонтакте
 
-            form.feedback-form
+            form.feedback-form#feedback-form--main
                 .form-item
                     label.text-2 Ваше имя
                     .form-input
@@ -55,6 +55,7 @@
                     .form-input.form-input--short
                         input(type="text" class="phone" name="phone" class='required-phone')
                         p.text-2 За час до начала вебинара предупредим вас по СМС
+                        p.text-2.error С этим номером телефона что-то не так. Перепроверьте, пожалуйста.
 
                 .contact-form-footer
                     .form-footer
