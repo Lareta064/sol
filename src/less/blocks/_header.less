@@ -1,3 +1,7 @@
+.header{
+	position: relative;
+	z-index:55;
+}
 .header-wrapper{
 	.flex-block;
 	padding-left: 20px;
@@ -16,21 +20,32 @@
 		a{
 			font-size: 20px;
 			line-height: 1.4;
-			opacity: .4;
+			// opacity: .4;
 			color: @pr;
-			cursor: default;
+			.tr;
+			border-bottom: 1px dashed rgba(37, 42, 52,.2);
+			padding-bottom: 5px;
+			&:hover{
+				color: @red;
+				border-bottom-color: rgba(237, 73, 24, .2);
+			}
 			&+a{
 				margin-left: 50px;
 			}
 			&.link-button{
 				height: 54px;
-				line-height: 54px;
+				line-height: 52px;
 				padding-left: 30px;
 				padding-right: 30px;
 				display: inline-block;
-				background-color:rgba(37, 42, 52, .1);
-				color: rgba(37, 42, 52, 1);
+				.tr;
+				color: @pr;
+				border: 1px solid @pr;
 				border-radius: 5px;
+				&:hover{
+					color: @red;
+					border-color: rgba(237, 73, 24, 1);
+				}
 			}
 		}
 	}

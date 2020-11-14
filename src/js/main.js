@@ -1,5 +1,44 @@
 $(document).ready(function () {
    const bodyEl = document.body;
+	// SHOW MOB MENU
+	const menuToggle = document.querySelector('.menu-toggle');
+	const mobMenu = document.querySelector('#mobile-menu');
+	const overlayBlock = document.querySelector('#overlay');
+	
+	if (menuToggle) {
+		menuToggle.addEventListener('click', function () {
+			if (this.classList.contains('active')) {
+				this.classList.remove('active');
+				mobMenu.classList.remove('active');
+				overlayBlock.classList.remove('active');
+				bodyEl.classList.remove('noscroll');
+
+			} else {
+				this.classList.add('active');
+				mobMenu.classList.add('active');
+				overlayBlock.classList.add('active');
+				bodyEl.classList.add('noscroll');
+
+			}
+		});
+		window.addEventListener('resize', function () {
+			menuToggle.classList.remove('active');
+			overlayBlock.classList.remove('active');
+			bodyEl.classList.remove('noscroll');
+			mobMenu.classList.remove('active');
+
+		});
+		mobMenu.addEventListener('click', function () {
+			this.classList.remove('active');
+			menuToggle.classList.remove('active');
+			overlayBlock.classList.remove('active');
+			bodyEl.classList.remove('noscroll');
+
+		})
+	}
+
+
+
    const previewBlock = document.getElementById('preview-content');
    const floatBtn = document.getElementById('floating-button');
   
@@ -29,19 +68,6 @@ $(document).ready(function () {
 		}
 	});
 
-//    window.addEventListener('scroll', function(){
-// 	   if(window.pageYOffset > 780){
-// 		 if(previewBlock){
-// 			floatBtn.classList.add('active'); 
-// 			let floatBtnRightPosition = +((window.innerWidth - previewBlock.offsetWidth) / 2 -20);
-// 			floatBtn.style.right = floatBtnRightPosition +'px';
-			
-// 		} 
-		
-// 	   }else{
-// 			floatBtn.classList.remove('active'); 
-// 		} 
-//    });
 
 	//  show Reviews
 	const reviewContent = document.getElementById('review-content');  

@@ -24,7 +24,24 @@ body {
   max-width: 1536px;
   .ma;
 }
-
+body.noscroll{
+  overflow: hidden;
+  
+}
+#overlay{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0, .5);
+  display: none;
+  z-index: 10;
+  &.active{
+    display: block;
+    backdrop-filter: blur(3px);
+  }
+}
 a,
 a:hover {
   text-decoration: none;
@@ -308,10 +325,11 @@ h4{
     width: 54px;
     height: 54px;
     border: 1px solid #E5E5E5;
+    border: 1px solid @pr;
 
     position: relative;
     border-radius: 5px;
-    background-color: #E5E5E5;
+    // background-color: #E5E5E5;
   }
 }
 
@@ -321,7 +339,8 @@ h4{
   display: block;
   width: 30px;
   height: 2px;
-  background-color: @op1;
+  
+  background-color: @pr;
 
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -334,7 +353,8 @@ h4{
   position: absolute;
   left: 0;
   height: 2px;
-  background-color: @op1;
+  
+  background-color: @pr;
   right: 0;
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -358,7 +378,7 @@ h4{
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #fff;
+  background-color: @pr;
 }
 
 .menu-toggle.active span:before {
@@ -366,7 +386,7 @@ h4{
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  background-color: #fff;
+  background-color: @pr;
 }
 
 
