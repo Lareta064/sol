@@ -123,7 +123,11 @@ button {
   background: @pr;
 
 }
-
+.container.container--p0{
+  @media (max-width: 424px) {
+    padding-left: 0;padding-right: 0;
+  }
+}
 .visible-mobile {
   display: none;
   @media (max-width: 767px) {
@@ -202,7 +206,11 @@ button {
 }
 .title-3 h3{
   font-size: 28px;
-  line-height: 1.21;
+  line-height: 1.22;
+  @media (max-width: 767px) {
+    font-size: 24px;
+    
+  }
 }
 h4{
   font-size: 24px;
