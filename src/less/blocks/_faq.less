@@ -32,7 +32,7 @@
       }
     }
 
-    .content-block {
+    .double-block-content {
       background-color: #FFFFFF;
       border-radius: 5px;
       padding-top: 50px;
@@ -125,7 +125,7 @@
     .img-block {
       width: 620px;
 
-      @media (max-width: 991px){
+      @media (max-width: 991px) {
         position: relative;
         width: 596px;
         left: -144px;
@@ -171,24 +171,43 @@
         margin-top: 5px;
       }
     }
-
-
   }
 
   .single-block-wrapper {
     position: relative;
     padding-bottom: 145px;
 
+    @media (max-width: 991px){
+      padding-bottom: 350px;
+    }
 
     @media (max-width: 424px) {
-      //overflow: hidden;
       padding-bottom: 370px;
+    }
+
+    .badge {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: rgb(245, 245, 247, 0.9);
+      color: #000000;
+
+      @media (max-width: 767px) {
+        margin-bottom: 0;
+      }
+
+      @media (max-width: 424px) {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 1;
+      }
     }
 
     .single-block {
       display: flex;
       margin-top: 50px;
-      //margin-bottom: 200px;
+      overflow: hidden;
       background-color: @light;
       border-radius: 5px;
 
@@ -196,33 +215,9 @@
         background-color: #FFFFFF;
         flex-direction: column-reverse;
         margin-top: 30px;
-        margin-bottom: 0;
-      }
-
-      .badge {
-        background-color: rgb(245, 245, 247, 0.9);
-        color: #000000;
-        margin-bottom: 260px;
-
-        @media (max-width: 767px) {
-          display: none;
-        }
-      }
-
-      .text-block {
-        width: 590px;
-
-        @media (max-width: 767px) {
-          width: 100%;
-        }
-
-        p.text-3 {
-          line-height: 1.5;
-        }
-      }
-
-      .text-block h4 {
-        margin-bottom: 15px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        //margin-bottom: 0;
       }
 
       .round-icon {
@@ -240,14 +235,21 @@
         box-shadow: 0 10px 60px rgba(110, 184, 131, 0.25), 0 10px 60px rgba(37, 42, 52, 0.15);
         color: #FFFFFF;
 
-        @media (max-width: 767px) {
-          left: 80px;
-          width: 340px;
-          height: 340px;
+        @media (min-width: 425px) and (max-width: 1199px){
+          right: -53px;
+          //bottom: -145px;
+          //width: 340px;
+          //height: 340px;
         }
+
+        //@media (max-width: 767px){
+        //  right: -55px;
+        //  bottom: -195px;
+        //}
 
         @media (max-width: 424px) {
           left: 0;
+          bottom: -10px;
         }
 
         span.number {
@@ -269,44 +271,45 @@
         }
       }
 
-      .block-content {
-        padding: 20px 50px 60px 30px;
+      .single-block-content {
+        display: contents;
+        flex-direction: row-reverse;
+      }
 
-        @media (max-width: 767px) {
+      .text-block {
+        width: 48%;
+        max-width: 590px;
+
+        @media (max-width: 991px) {
+          width: 100%;
           padding-left: 20px;
           padding-right: 20px;
+          padding-top: 20px;
+          padding-bottom: 60px;
+        }
+
+        p.text-3 {
+          line-height: 1.5;
         }
       }
 
-      .img-block--mobile {
-        @media (max-width: 424px) {
-          position: relative;
-          background-color: @light;
-        }
+      .text-block h4 {
+        margin-bottom: 15px;
       }
 
       .img-block {
-        width: 620px;
-        
+        max-width: 620px;
+        width: 48%;
+        background-color: @light;
+
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+
         @media (max-width: 424px) {
-          overflow: hidden;
           width: 335px;
         }
 
-        .badge {
-          display: none;
-          @media (max-width: 767px) {
-            display: block;
-            margin-bottom: 0;
-          }
-
-          @media (max-width: 424px) {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 1;
-          }
-        }
 
         img {
           @media (max-width: 424px) {
