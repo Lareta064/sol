@@ -63,6 +63,10 @@
     font-weight: 700;
     white-space: nowrap;
 
+    @media(max-width: 374px){
+      font-size: 15px;
+    }
+
     span {
       white-space: nowrap;
     }
@@ -70,6 +74,10 @@
 
   p + p {
     margin-left: 40px;
+
+    @media (max-width: 374px) {
+      margin-left: 28px;
+    }
   }
 
   p:first-child {
@@ -89,8 +97,8 @@
     left: -7px;
     top: -2px;
     @media (max-width: 1364px) {
-      left: 0px;
-      top: 0px;
+      left: 0;
+      top: 0;
     }
 
   }
