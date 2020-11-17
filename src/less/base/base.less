@@ -25,6 +25,27 @@ body {
   .ma;
 }
 
+body.noscroll {
+  overflow: hidden;
+
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .5);
+  display: none;
+  z-index: 10;
+
+  &.active {
+    display: block;
+    backdrop-filter: blur(3px);
+  }
+}
+
 a,
 a:hover {
   text-decoration: none;
@@ -107,6 +128,13 @@ button {
 
 }
 
+.container.container--p0 {
+  @media (max-width: 424px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .visible-mobile {
   display: none;
   @media (max-width: 767px) {
@@ -142,7 +170,7 @@ button {
 }
 
 /*типографика*/
-.title-1 h1, .title-2 h2 {
+.title-1 h1, .title-2 h2, .title-3 h3 {
   color: @pr;
   font-family: @cm, sans-serif;
   font-weight: bold;
@@ -184,6 +212,16 @@ button {
   }
 }
 
+
+.title-3 h3 {
+  font-size: 28px;
+  line-height: 1.22;
+  @media (max-width: 767px) {
+    font-size: 24px;
+
+  }
+}
+
 h4 {
   font-size: 24px;
   line-height: 1.25;
@@ -193,6 +231,10 @@ h4 {
 
 .green-text {
   color: @green;
+}
+
+.red-text {
+  color: @red;
 }
 
 .text-1 {
@@ -299,9 +341,8 @@ h4 {
   position: relative;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .menu-toggle {
-    display: block;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,10 +351,11 @@ h4 {
     width: 54px;
     height: 54px;
     border: 1px solid #E5E5E5;
+    border: 1px solid @pr;
 
     position: relative;
     border-radius: 5px;
-    background-color: #E5E5E5;
+    // background-color: #E5E5E5;
   }
 }
 
@@ -323,7 +365,8 @@ h4 {
   display: block;
   width: 30px;
   height: 2px;
-  background-color: @op1;
+
+  background-color: @pr;
 
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -336,7 +379,8 @@ h4 {
   position: absolute;
   left: 0;
   height: 2px;
-  background-color: @op1;
+
+  background-color: @pr;
   right: 0;
   -webkit-transition: .3s;
   -o-transition: .3s;
@@ -360,7 +404,7 @@ h4 {
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
-  background-color: #fff;
+  background-color: @pr;
 }
 
 .menu-toggle.active span:before {
@@ -368,7 +412,7 @@ h4 {
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  background-color: #fff;
+  background-color: @pr;
 }
 
 
