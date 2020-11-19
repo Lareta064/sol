@@ -10,7 +10,6 @@
   .ma;
 
   @media (max-width: 991px) {
-    min-width: 320px;
     padding-top: 30px;
     margin-top: 140px;
   }
@@ -50,6 +49,10 @@
     @media (max-width: 991px) {
       margin-bottom: 30px;
       font-size: 36px;
+    }
+
+    @media (max-width: 374px) {
+      font-size: 30px;
     }
   }
 
@@ -292,7 +295,7 @@ input {
     width: 300px;
 
     @media (max-width: 374px) {
-      width: 280px;
+      width: 240px;
     }
   }
 }
@@ -380,7 +383,7 @@ input {
     display: flex;
 
     @media (max-width: 767px) {
-      display: block;
+      flex-direction: column;
     }
 
     a {
