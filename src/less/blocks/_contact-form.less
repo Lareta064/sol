@@ -27,7 +27,6 @@
     display: none;
   }
 
-
   .success-message {
     display: none;
   }
@@ -42,7 +41,6 @@
       padding-right: 20px;
     }
   }
-
 
   .title-2 h2 {
     color: #ffffff;
@@ -72,10 +70,8 @@
       margin-bottom: 56px;
     }
 
-
     .preview-content__data {
       display: flex;
-
     }
 
     .preview-content__data p + p {
@@ -92,15 +88,14 @@
   }
 
   .text-link {
-    color: #FFFFFF;
-    border-bottom: 1px solid #FFFFFF;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
 
     &:hover {
       color: rgb(237, 73, 24);
-      border-bottom-color: rgba(237, 73, 24, .1);
+      border-bottom-color: rgba(237, 73, 24, 0.1);
     }
   }
-
 }
 
 .contact-subtitle {
@@ -176,9 +171,7 @@
   }
 }
 
-
 .feedback-form {
-
   .form-item {
     display: flex;
     padding-left: 108px;
@@ -202,11 +195,9 @@
     }
   }
 
-
   .form-item + .form-item {
     margin-top: 30px;
   }
-
 
   .form-item input.error {
     background-color: @error;
@@ -225,7 +216,6 @@
   }
 }
 
-
 input {
   height: 60px;
   border-radius: 5px;
@@ -236,7 +226,8 @@ input {
   padding-left: 15px;
   padding-right: 15px;
 
-  &:hover, :active {
+  &:hover,
+  :active {
     border: 1px solid @red;
   }
 }
@@ -269,7 +260,6 @@ input {
   margin-bottom: 60px;
 }
 
-
 .contact-form-footer {
   display: flex;
   justify-content: space-between;
@@ -286,7 +276,6 @@ input {
   }
 }
 
-
 .form-footer {
   padding-left: 220px;
 
@@ -302,7 +291,7 @@ input {
   .big-button {
     width: 300px;
 
-    @media(max-width: 374px){
+    @media (max-width: 374px) {
       width: 280px;
     }
   }
@@ -319,17 +308,15 @@ input {
 .disclaimer-text {
   width: 300px;
 
-  @media(max-width: 374px){
+  @media (max-width: 374px) {
     width: 298px;
   }
 }
-
 
 /*contact-form-success*/
 .contact-form.contact-form-success {
   position: relative;
   background-color: @fg;
-
 
   .contact-subtitle {
     background-color: @pr;
@@ -395,11 +382,18 @@ input {
     @media (max-width: 767px) {
       display: block;
     }
+
+    a {
+      @media (max-width: 767px) {
+        display: block;
+        width: 220px;
+      }
+    }
   }
 
   .social-button {
     height: 60px;
-    color: #FFFFFF;
+    color: #ffffff;
     line-height: 60px;
     display: inline-flex;
     justify-content: center;

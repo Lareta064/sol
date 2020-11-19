@@ -1,5 +1,9 @@
 .warning {
   margin-top: 240px;
+
+  @media(max-width: 991px){
+    margin-top: 142px;
+  }
 }
 
 .warning.warning--2 {
@@ -11,9 +15,18 @@
   margin-bottom: 20px;
   margin-top: 100px;
 
+  @media(max-width:991px){
+    margin-top: 150px;
+  }
+
   .badge{
     background-color: @blue;
     margin-left: 24px;
+
+    @media(max-width: 991px){
+      margin-left: 0;
+      margin-top: 20px;
+    }
   }
 
   .warning-text--flex{
@@ -36,5 +49,9 @@
 
   p + p {
     margin-top: 30px;
+
+    @media(max-width: 991px){
+      margin-top: 15px;
+    }
   }
 }
